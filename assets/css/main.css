@@ -3136,3 +3136,8 @@ input, select, textarea {
 					}
 
 	}
+
+#header-video {
+	height: 100vh;
+}
+
