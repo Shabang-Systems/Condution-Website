@@ -2265,7 +2265,7 @@ input, select, textarea {
 
 		body.homepage #header:after {
 			content: '';
-            background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), rgb(222, 222, 222);
+            background: #1a283d;
 			display: block;
 			position: absolute;
 			left: 0;
