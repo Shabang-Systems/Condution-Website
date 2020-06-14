@@ -34,9 +34,12 @@
 			// https://stackoverflow.com/a/21982414
 			video_frame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&enablejsapi=1';
 
+			// yt player: https://stackoverflow.com/a/19604712/10372825
+			// end event: https://stackoverflow.com/a/10773341/10372825
 			player = new YT.Player('header-video-iframe', { events: {
-				'onStateChange': (state) => {
-					if (state === 0) {
+				'onStateChange': (ev) => {
+					console.log(ev);
+					if (ev.data <= 0) {
 						video_div.style.display = 'none';
 					}
 				}
