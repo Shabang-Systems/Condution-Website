@@ -60,9 +60,11 @@
 							<header>
 								<h1><a href="index.html" id="logo">Condution</a></h1>
 								<p>Tasks? Done. That was quick.</p>
+
 							</header>
 							<footer>
-								<a onclick="startVideo()"><span class="label scrolly" style="font-weight: 600">Watch the Film</span></a>
+								<a onclick="startVideo()"><span class="label scrolly main-action" style="font-weight: 600; margin-right: 5px;border-bottom: 1px solid #eaedad;">Watch the Film</span></a>
+								<a onClick='$("#downloads").get(0).scrollIntoView({ behavior: "smooth" })'><span class="label scrolly main-action" style="font-weight: 600; margin-left: 10px;border-bottom: 1px solid #b1dcbf;">Download the App</span></a>
 								<!-- TODO: get a play button instead of an envelope -->
 							</footer>
 						</div>
@@ -71,7 +73,7 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="index.html" class="scrolly">Home</a></li>
-								<li><a class="scrolly" onClick='$("#downloads").get(0).scrollIntoView({ behavior: "smooth" })'>Download</a></li>
+								<li><a href="#" class="scrolly" onClick='$("#downloads").get(0).scrollIntoView({ behavior: "smooth" })'>Download</a></li>
 								<li><a href="https://github.com/Shabang-Systems/Condution">Source</a></li>
 							</ul>
 						</nav>
@@ -117,27 +119,27 @@
 						</header>
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic07.png" alt=""/></a>
+								<a class="image featured"><img src="images/pic07.png" alt=""/></a>
 								<header>
-									<h3><a href="#">Due + Start Dates (and Times)</a></h3>
+									<h3><a>Due + Start Dates (and Times)</a></h3>
 								</header>
 								<p>
 								Yes, you heard it right! Unlike some of the other apps out there, we know that timing is important to people! Every task is hidden until a certain time and due at precisely at a time, so your know day could be managed right down to your needs.
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic08.png" alt="" /></a>
+								<a class="image featured"><img src="images/pic08.png" alt="" /></a>
 								<header>
-									<h3><a href="#">Sequential and Parallel Projects</a></h3>
+									<h3><a>Sequential and Parallel Projects</a></h3>
 								</header>
 								<p>
 								Some tasks can’t really be done without others before it being done first, and we understand that. Tasks blocked in a sequential project could be hidden if needed, and shown again when ready.
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic09.png" alt="" /></a>
+								<a class="image featured"><img src="images/pic09.png" alt="" /></a>
 								<header>
-									<h3><a href="#">Filters and Perspectives</a></h3>
+									<h3><a>Filters and Perspectives</a></h3>
 								</header>
 								<p>
 								Filter tasks by tag? Check. Filter by projects? Check. Filter by due date? Check. Filter by due date and project with tags and sort tasks based on defer date while hiding eveything that’s not avaliable? You bet.
