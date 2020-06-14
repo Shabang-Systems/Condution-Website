@@ -24,29 +24,30 @@
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
 			<div id="header-video" style="display: none;">
-				<iframe id="header-video-iframe" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<script src="https://www.youtube.com/iframe_api"></script>
-	<script>
-		function startVideo() {
-			let video_div = document.getElementById('header-video');
-			let video_frame = document.getElementById('header-video-iframe');
-			video_div.style.display = 'block';
-			// https://stackoverflow.com/a/21982414
-			video_frame.src = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&enablejsapi=1';
-
-			// yt player: https://stackoverflow.com/a/19604712/10372825
-			// end event: https://stackoverflow.com/a/10773341/10372825
-			player = new YT.Player('header-video-iframe', { events: {
-				'onStateChange': (ev) => {
-					console.log(ev);
-					if (ev.data <= 0) {
-						video_div.style.display = 'none';
-					}
-				}
-			}});
-		}
-	</script>
+				<iframe id="header-video-iframe" width="100%" height="100%" src="https://www.youtube.com/embed/qGWh-EEYiWg?autoplay=1&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"></iframe>
 			</div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script>
+            window.addEventListener('load', function () {
+                let player = new YT.Player('header-video-iframe', {
+                events: {
+                    'onStateChange': (ev) => {
+                        console.log(ev);
+                        if (ev.data == 0) {
+                            video_div.style.display = 'none';
+                        }
+                    }
+                }});
+            });
+            function startVideo() {
+                let video_div = document.getElementById('header-video');
+                let video_frame = document.getElementById('header-video-iframe');
+                // https://stackoverflow.com/a/21982414
+                // yt player: https://stackoverflow.com/a/19604712/10372825
+                // end event: https://stackoverflow.com/a/10773341/10372825
+                video_div.style.display = 'block';
+            }
+        </script>
 			<!-- Header -->
 			<div id="header-overlay" style="display: block;">
 				<div id="header">
@@ -58,7 +59,7 @@
 								<p>Tasks? Done. That was quick.</p>
 							</header>
 							<footer>
-								<a onclick="startVideo()"><span class="label">Watch the Trailer</span></a>
+								<a onclick="startVideo()"><span class="label" style="font-weight: 600">Watch the Trailer</span></a>
 								<!-- TODO: get a play button instead of an envelope -->
 							</footer>
 						</div>
