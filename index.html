@@ -28,24 +28,26 @@
 			</div>
         <script src="https://www.youtube.com/iframe_api"></script>
         <script>
-            window.addEventListener('load', function () {
+            // window.addEventListener('load', function () {
+                
+            // });
+            function startVideo() {
+                let video_div = $('#header-video');
+                let video_frame = document.getElementById('header-video-iframe');
                 let player = new YT.Player('header-video-iframe', {
-                events: {
-                    'onStateChange': (ev) => {
-                        console.log(ev);
-                        if (ev.data == 0) {
-                            video_div.style.display = 'none';
+                    events: {
+                        'onStateChange': (ev) => {
+                            console.log(ev);
+                            if (ev.data == 0) {
+                                video_div.fadeOut();
+                            }
                         }
                     }
-                }});
-            });
-            function startVideo() {
-                let video_div = document.getElementById('header-video');
-                let video_frame = document.getElementById('header-video-iframe');
+                });
                 // https://stackoverflow.com/a/21982414
                 // yt player: https://stackoverflow.com/a/19604712/10372825
                 // end event: https://stackoverflow.com/a/10773341/10372825
-                video_div.style.display = 'block';
+                video_div.fadeIn();
             }
         </script>
 			<!-- Header -->
@@ -59,7 +61,7 @@
 								<p>Tasks? Done. That was quick.</p>
 							</header>
 							<footer>
-								<a onclick="startVideo()"><span class="label" style="font-weight: 600">Watch the Trailer</span></a>
+								<a onclick="startVideo()"><span class="label scrolly" style="font-weight: 600">Watch the Trailer</span></a>
 								<!-- TODO: get a play button instead of an envelope -->
 							</footer>
 						</div>
@@ -90,15 +92,14 @@
 				<div class="wrapper style2">
 
 					<article id="main" class="container special">
-						<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+						<a href="#" class="image featured centered"><img src="images/pic06.png" alt="" style="width: 1000px; height: auto"/></a>
 						<header>
 							<h2><a href="#">The App</a></h2>
 							<p>
-								Condution is a wonderful electron app built to create a perfectly easy task-management dashboard that’s powerful, yet also simple. The inspiration of the project spanned from our long frustration with the current state of productivity software on the internet — they are expensive and often complicated to use.
-
+								Condution is an app built to create a perfectly easy task-management dashboard that’s powerful, yet also simple. The inspiration of the project spanned from our long frustration with the current state of productivity software on the internet — they are expensive and often complicated to use.
+                                <br />
+                                <br />
 								Condution attempts to change this. We want to create an open-source productivity/task-management app that is both simple, and, well, free (but we do take Patreon donations though).
-
-								We will add some glam => here <=, soon.
 							</p>
 						</header>
 					</article>
@@ -110,12 +111,12 @@
 
 					<section id="features" class="container special">
 						<header>
-							<h2>Features!</h2>
+							<h2>Features</h2>
 							<p>TODO: something about feature completeness here</p>
 						</header>
 						<div class="row">
 							<article class="col-4 col-12-mobile special">
-								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>
+								<a href="#" class="image featured"><img src="images/pic07.jpg" alt=""/></a>
 								<header>
 									<h3><a href="#">Due + Start Dates (and Times!)</a></h3>
 								</header>
@@ -173,7 +174,7 @@
 								<!-- Copyright -->
 									<div class="copyright">
 										<ul class="menu">
-											<li>&copy; Shabang Systems. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>&copy; Shabang Systems. All rights reserved.</li><li>Site Design: <a href="http://html5up.net">HTML5 UP</a></li>
 										</ul>
 									</div>
 
