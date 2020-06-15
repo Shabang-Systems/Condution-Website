@@ -28,6 +28,11 @@ section, summary, time, mark, audio, video {
 #download-msg {
   font-size: 19px;
 }
+#nav > ul > li > a:hover {
+    color: #c5d0ef !important;
+}
+
+
 		@media screen and (max-width: 1680px) {
 
 			#download-msg {
