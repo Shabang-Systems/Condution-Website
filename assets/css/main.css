@@ -25,6 +25,48 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+#download-msg {
+  font-size: 19px;
+}
+		@media screen and (max-width: 1680px) {
+
+			#download-msg {
+              font-size: 19px;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			#download-msg {
+              font-size: 15px;
+			}
+
+		}
+
+		@media screen and (max-width: 960px) {
+
+			#download-msg {
+              font-size: 13px;
+			}
+
+		}
+
+		@media screen and (max-width: 840px) {
+
+			#download-msg {
+              font-size: 13px;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#download-msg {
+			}
+
+		}
+
 
 .main-action {
     text-decoration: none;
