@@ -4,6 +4,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$(document).ready(function() {
+    let currentState = true;
+    setInterval(function() {
+        $("#scroll-down").animate({"opacity": currentState ? 1 : 0.7}, 800);
+        currentState = !currentState;
+    }, 1000);
+});
+
 (function($) {
 
 	var	$window = $(window),
@@ -215,3 +223,4 @@
 		});
 
 })(jQuery);
+
