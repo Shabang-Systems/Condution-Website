@@ -2800,13 +2800,13 @@ input, select, textarea {
     background-size: contain;
     background-position: top center;
     min-height: 100vw;
-    
 }
 
 #better-header h1 {
-    font-size: 8vw;
-    color: white;
+    font-size: 7vw;
+    color: #434d5f;
     padding-top: 4vw;
+    mix-blend-mode: color-burn;
 }
 
 /* Mobile */
