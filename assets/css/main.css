@@ -2797,7 +2797,7 @@ input, select, textarea {
 
 #better-header {
     background: url("../../images/LongBkImg.png");
-    background-size: cover;
+    background-size: contain;
     background-position: top center;
     min-height: 100vw;
 }
