@@ -2807,6 +2807,15 @@ input, select, textarea {
     color: #434d5f;
     padding-top: 4vw;
     mix-blend-mode: color-burn;
+    margin-bottom: 10px;
+}
+
+#better-header span {
+    font-size: 3vw;
+}
+
+#better-header footer {
+    display: block;
 }
 
 /* Mobile */
@@ -2816,6 +2825,18 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
+
+        #better-header h1 {
+            margin-bottom: 1vw;
+        }
+
+        #better-header span {
+            font-size: 4vw;
+        }
+
+        #better-header footer {
+            display: none;
+        }
 
 		/* Basic */
 
