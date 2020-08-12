@@ -2800,6 +2800,13 @@ input, select, textarea {
     background-size: contain;
     background-position: top center;
     min-height: 100vw;
+    
+}
+
+#better-header h1 {
+    font-size: 8vw;
+    color: white;
+    padding-top: 4vw;
 }
 
 /* Mobile */
@@ -2809,12 +2816,6 @@ input, select, textarea {
 	}
 
 	@media screen and (max-width: 736px) {
-
-        /* Better Header*/
-
-        #better-header {
-        }
-
 
 		/* Basic */
 
