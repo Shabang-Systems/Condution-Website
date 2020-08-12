@@ -2818,6 +2818,10 @@ input, select, textarea {
     display: block;
 }
 
+#better-header #feature {
+    margin-top: 20vw;
+}
+
 /* Mobile */
 
 	#navPanel, #titleBar {
