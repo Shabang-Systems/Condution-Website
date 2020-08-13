@@ -2344,7 +2344,15 @@ input, select, textarea {
 /* Nav */
 
     #main-nav {
-        height: 50px;
+        height: 45px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 10px;
+    }
+
+    #main-nav a {
+        vertical-align: middle;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -2355,7 +2363,6 @@ input, select, textarea {
         color: #434d5f;
         font-family: Helvetica Neue;
         font-size: 20px;
-        margin-left: 10px;
     }
 
 	#nav {
@@ -2368,6 +2375,18 @@ input, select, textarea {
 		z-index: 1;
 		overflow: hidden;
 	}
+
+    #action-button {
+        color: #434d5f !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 5px;
+        font-weight: 400 !important;
+    }
 
 		#nav > ul {
 			line-height: 0px;
