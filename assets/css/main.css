@@ -2817,8 +2817,8 @@ input, select, textarea {
     font-size: 3vw;
 }
 
-#better-header footer {
-    display: block;
+#better-header footer a span {
+    font-size: 1.5vw;
 }
 
 #better-header #feature {
@@ -2841,8 +2841,8 @@ input, select, textarea {
             font-size: 4vw;
         }
 
-        #better-header footer {
-            display: none;
+        #better-header footer a span {
+            font-size: 3.5vw;
         }
 
 		/* Basic */
