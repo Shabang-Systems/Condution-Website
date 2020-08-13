@@ -2817,13 +2817,28 @@ input, select, textarea {
     font-size: 3vw;
 }
 
-#better-header footer a span {
-    font-size: 1.5vw;
-}
-
 #better-header #feature {
     margin-top: 20vw;
 }
+
+#normi-foot a {
+    border: 0 !important;
+}
+
+#normi-foot a span {
+    font-size: 1.60vw;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 10px;
+}
+
+
+#mobi-foot a span {
+    display: none;
+}
+
+
 
 /* Mobile */
 
@@ -2835,17 +2850,28 @@ input, select, textarea {
 
         #better-header h1 {
             margin-bottom: 1vw;
+            font-size: 10vw;
         }
 
         #better-header span {
+            font-size: 5vw;
+        }
+
+        #normi-foot a span {
             font-size: 4vw;
+            display: none;
         }
 
-        #better-header footer a span {
-            font-size: 3.5vw;
+        #mobi-foot a {
+            border-bottom: none !important;
         }
 
-		/* Basic */
+        #mobi-foot a span {
+            display: inline-block;
+            font-size: 3.75vw;
+        }
+
+        /* Basic */
 
 			html, body {
 				overflow-x: hidden;
