@@ -167,7 +167,8 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
-		color: #374559;
+        /*color: #374559;*/
+        color: #c04f40;
 		line-height: 1.25em;
 	}
 
@@ -196,7 +197,8 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 400;
-		color: #1a283d;
+		/*color: #1a283d;*/
+        color: #f4721a;
 	}
 
 	em, i {
