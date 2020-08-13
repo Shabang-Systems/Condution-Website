@@ -2343,6 +2343,21 @@ input, select, textarea {
 
 /* Nav */
 
+    #main-nav {
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #main-nav div {
+        font-weight: 600;
+        color: #434d5f;
+        font-family: Helvetica Neue;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
 	#nav {
 		position: absolute;
 		top: 0;
